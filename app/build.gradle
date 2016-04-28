@@ -1,0 +1,36 @@
+/**
+ * @Author: Uki D. Lucas http://uki.technology
+ */
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 20 // 23 Android 6.0 Marshmallow
+    buildToolsVersion "23.0.3" // April 2016
+
+    defaultConfig {
+        applicationId "technology.uki.kmlmapoverlays"
+        minSdkVersion 9
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false // runProguard false - no longer supported
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('libs/osmdroid-android-4.2.jar')
+    compile files('libs/slf4j-android-1.7.7.jar')
+    compile files('libs/slf4j-api-1.7.7.jar')
+    compile 'com.android.support:appcompat-v7:20.0.0' // TODO: update project UI to v7:23.3.0
+    compile('com.google.android.gms:play-services:4.3.23') {
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
+    compile files('libs/osmbonuspack_v4.7.jar')
+}
