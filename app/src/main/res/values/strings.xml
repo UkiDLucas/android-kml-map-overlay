@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KML Map Overlays</string>
+
+    <string name="notification_title_mock_running">Mock Location Set</string>
+    <string name="notification_content_mock_running">Mock Location running</string>
+    <string name="disconnected">Client disconnected</string>
+    <string name="connected">Client connected</string>
+    <string name="connection_failure">Client connection failed, error code %1$d</string>
+    <string name="mock_location_cancelled">Spoofing location interrupted by user.</string>
+    <string name="mock_location_already_set">This location is already set</string>
+    <string name="mock_location_set">Mock location set</string>
+    <string name="mock_location_disabled">Mock location disabled</string>
+    <string name="app_status_label">App status:</string>
+    <string name="connection_status_label">Connection status:</string>
+
+    <string name="sending_location_to_other_apps">Sending location to other apps…</string>
+    <string name="press_to_send_location">Press to send location to other apps</string>
+
+    <string name="tiles_not_found_notice">Map tiles not found. Put .zip with map tiles to KMLMapOverlays directory on SD card</string>
+    <string name="mock_location_disabled_notice">Mock Location needs to be enabled. Go to settings?</string>
+
+    <string name="default_map_tile_title">Tile not found</string>
+
+    <string name="warning">Warning</string>
+
+    <string name="tiles_not_found_message">No map zip files found in the \'%s\' directory</string>
+    <string name="location_not_selected_message">Location not selected. Long press on map to select location</string>
+
+    <string name="ok">OK</string>
+
+    <string name="selected_location">Selected Location:\n\nlat = %1$s \n\nlng = %2$s</string>
+
+</resources>
