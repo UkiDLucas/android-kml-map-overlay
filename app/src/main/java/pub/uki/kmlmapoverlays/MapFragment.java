@@ -43,6 +43,7 @@ import org.osmdroid.views.overlay.ScaleBarOverlay;
 import java.io.File;
 import java.util.ArrayList;
 
+import kmlmapoverlays.offline.maps.R;
 import pub.uki.kmlmapoverlays.dialog.LocationNotSelectedDialogFragment;
 import pub.uki.kmlmapoverlays.dialog.MockLocationDisabledDialogFragment;
 import pub.uki.kmlmapoverlays.dialog.TilesNotFoundDialogFragment;
@@ -53,7 +54,12 @@ import pub.uki.kmlmapoverlays.tile.CheckTilesExistenceTask;
 import pub.uki.kmlmapoverlays.tile.ExtendedTilesOverlay;
 import pub.uki.kmlmapoverlays.tile.ExtendedTilesOverlayFactory;
 
-public class MapFragment extends Fragment implements GooglePlayServicesClient.ConnectionCallbacks, GooglePlayServicesClient.OnConnectionFailedListener, MapListener, MapEventsReceiver {
+public class MapFragment extends Fragment
+        implements
+        GooglePlayServicesClient.ConnectionCallbacks,
+        GooglePlayServicesClient.OnConnectionFailedListener,
+        MapListener,
+        MapEventsReceiver {
 
     private static final String TAG = MapFragment.class.getSimpleName();
 

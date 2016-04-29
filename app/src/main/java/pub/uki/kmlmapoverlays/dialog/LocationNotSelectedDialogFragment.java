@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 
+import kmlmapoverlays.offline.maps.R;
+
 
 public class LocationNotSelectedDialogFragment extends DialogFragment {
 
@@ -27,4 +29,6 @@ public class LocationNotSelectedDialogFragment extends DialogFragment {
                     }
                 }).create();
     }
+
+
 }
